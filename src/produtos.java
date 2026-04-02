@@ -5,4 +5,14 @@ public class produtos {
 
     //Criar metodos C.R.U.D
 
+    public void atualizarProduto(int indexPrduto, String novoValor){
+        try{
+            produtos.set(indexPrduto, novoValor);
+        }catch (Exception e){
+            System.out.println(e);
+        }
+    }
+
+
+
 }
