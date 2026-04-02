@@ -5,9 +5,9 @@ public class produtos {
 
     //Criar metodos C.R.U.D
 
-    public void atualizarProduto(int indexPrduto, String novoValor){
+    public void atualizarProduto(int indexProduto, String novoValor){
         try{
-            produtos.set(indexPrduto, novoValor);
+            produtos.set(indexProduto, novoValor);
         }catch (Exception e){
             System.out.println(e);
         }
