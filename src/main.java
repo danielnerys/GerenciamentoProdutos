@@ -23,7 +23,7 @@ public class main {
             switch (opcao) {
 
                 case 1:
-                    //cadastrar
+                       //cadastrar/////
                     break;
                 case 2:
                     //listar
