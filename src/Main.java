@@ -26,7 +26,7 @@ public class Main {
                 case 1:
                     //cadastrar
                     System.out.println("Insira o nome do Produto a ser cadastrado: ");
-                    nomeProduto = sc.nextLine();
+                    nomeProduto = sc.next();
                     produto.cadastrarProduto(nomeProduto);
                     System.out.printf("Produto '%s' cadastrado com sucesso!", nomeProduto);
                     break;
@@ -36,8 +36,9 @@ public class Main {
                     break;
                 case 3:
                     System.out.println("Insira o nome do Produto a ser deletado: ");
-                    nomeProduto = sc.nextLine();
+                    nomeProduto = sc.next();
                     produto.deletarProduto(nomeProduto);
+                    System.out.printf("Produto '%s' deletado com sucesso!", nomeProduto);
                     break;
                 case 4:
                     //atualizar produto

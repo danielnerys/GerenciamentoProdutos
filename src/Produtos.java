@@ -29,7 +29,6 @@ public class Produtos {
     public  void deletarProduto(String nomeProduto){
         try{
             produtos.remove(nomeProduto);
-            System.out.println("O produto '%s' foi deletado com sucesso.");
 
         } catch (Exception e){
             System.out.printf("Erro ao deletar produto '%s'\n", nomeProduto);
