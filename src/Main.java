@@ -7,6 +7,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         ArrayList<String> produtos = new ArrayList<>();
         Produtos produto = new Produtos();
+        String nomeProduto;
 
         int opcao;
 
@@ -25,14 +26,17 @@ public class Main {
                 case 1:
                     //cadastrar
                     System.out.println("Insira o nome do Produto a ser cadastrado: ");
-                    String nomeProduto = sc.nextLine();
+                    nomeProduto = sc.nextLine();
                     produto.cadastrarProduto(nomeProduto);
                     break;
                 case 2:
-                    //listar
+                    System.out.println("--- PRODUTOS --- \n");
+                    produto.listarProduto();
                     break;
                 case 3:
-                    //deletar
+                    System.out.println("Insira o nome do Produto a ser deletado: ");
+                    nomeProduto = sc.nextLine();
+                    produto.deletarProduto(nomeProduto);
                     break;
                 case 4:
                     //atualizar produto
