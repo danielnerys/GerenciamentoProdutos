@@ -18,4 +18,27 @@ public class Produtos {
         }
     }
 
+    public void listarProduto(){
+        try{
+            for( String produto : produtos){
+                System.out.printf("Nome: %s", produto);
+            }
+        } catch(Exception e){
+            System.out.println("Erro ao listar produtos\n");
+            System.out.printf("ERRO --> : %s", e);
+        }
+    }
+
+    public  void deletarProduto(String nomeProduto){
+        try{
+            produtos.remove(nomeProduto);
+            System.out.println("O produto '%s' foi deletado com sucesso.");
+
+        } catch (Exception e){
+            System.out.printf("Erro ao deletar produto '%s'\n", nomeProduto);
+            System.out.printf("ERRO --> : %s", e);
+        }
+
+    }
+
 }
