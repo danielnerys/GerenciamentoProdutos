@@ -12,7 +12,7 @@ public class Main {
         int opcao;
 
         do{
-            System.out.println("====== Menu ======");
+            System.out.println("\n====== Menu ======");
             System.out.println("1 - Cadastrar produtos");
             System.out.println("2 - Listar produtos");
             System.out.println("3 - Deletar produto");
@@ -28,7 +28,7 @@ public class Main {
                     System.out.println("Insira o nome do Produto a ser cadastrado: ");
                     nomeProduto = sc.next();
                     produto.cadastrarProduto(nomeProduto);
-                    System.out.printf("Produto '%s' cadastrado com sucesso!", nomeProduto);
+                    System.out.printf("\nProduto '%s' cadastrado com sucesso!\n", nomeProduto);
                     break;
                 case 2:
                     System.out.println("--- PRODUTOS --- \n");
@@ -38,7 +38,7 @@ public class Main {
                     System.out.println("Insira o nome do Produto a ser deletado: ");
                     nomeProduto = sc.next();
                     produto.deletarProduto(nomeProduto);
-                    System.out.printf("Produto '%s' deletado com sucesso!", nomeProduto);
+                    System.out.printf("\nProduto '%s' deletado com sucesso!\n", nomeProduto);
                     break;
                 case 4:
                     System.out.println("Digite o numero do livro: ");
@@ -57,7 +57,7 @@ public class Main {
                     break;
 
                 default:
-                    System.out.println("Opção invalida :(");
+                    System.out.println("Opção invalida :(\n");
 
             }
 

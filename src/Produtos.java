@@ -31,7 +31,7 @@ public class Produtos {
             }
         } catch(Exception e){
             System.out.println("Erro ao listar produtos\n");
-            System.out.printf("ERRO --> : %s", e);
+            System.out.printf("ERRO --> : %s", e.getMessage());
         }
     }
 
@@ -41,7 +41,7 @@ public class Produtos {
 
         } catch (Exception e){
             System.out.printf("Erro ao deletar produto '%s'\n", nomeProduto);
-            System.out.printf("ERRO --> : %s", e);
+            System.out.printf("ERRO --> : %s", e.getMessage());
         }
 
     }
