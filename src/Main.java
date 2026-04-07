@@ -35,7 +35,16 @@ public class Main {
                     //deletar
                     break;
                 case 4:
-                    //atualizar produto
+                    System.out.println("Digite o numero do livro: ");
+                    int indexLivro = sc.nextInt();
+                    if(indexLivro <= produto.produtos.size()){
+                        System.out.printf("Encontrei o livro %s", produto.produtos.get(indexLivro));
+                        System.out.println("Digite o novo valor: ");
+                        String novoValor = sc.next();
+                        produto.atualizarProduto(indexLivro, novoValor);
+                   }else {
+                        System.out.println("Livro não encontrado!");
+                    }
                     break;
                 case 0:
                     System.out.println("Saindo....");

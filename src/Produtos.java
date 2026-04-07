@@ -17,5 +17,14 @@ public class Produtos {
             System.out.println("Mensagem Erro: " + e.getMessage());
         }
     }
+    public void atualizarProduto(int indexProduto, String novoValor){
+            try {
+                produtos.set(indexProduto, novoValor);
+
+            }catch (Exception e){
+                System.out.println(e);
+            }
+
+    }
 
 }
