@@ -44,8 +44,8 @@ public class Main {
                     System.out.println("Digite o numero do livro: ");
                     int indexLivro = sc.nextInt();
                     if(indexLivro <= produto.produtos.size()){
-                        System.out.printf("Encontrei o livro %s", produto.produtos.get(indexLivro));
-                        System.out.println("Digite o novo valor: ");
+                        System.out.printf("\nEncontrei o livro %s", produto.produtos.get(indexLivro));
+                        System.out.println("\nDigite o novo valor: ");
                         String novoValor = sc.next();
                         produto.atualizarProduto(indexLivro, novoValor);
                    }else {
