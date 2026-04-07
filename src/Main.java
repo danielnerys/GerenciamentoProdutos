@@ -28,6 +28,7 @@ public class Main {
                     System.out.println("Insira o nome do Produto a ser cadastrado: ");
                     nomeProduto = sc.nextLine();
                     produto.cadastrarProduto(nomeProduto);
+                    System.out.printf("Produto '%s' cadastrado com sucesso!", nomeProduto);
                     break;
                 case 2:
                     System.out.println("--- PRODUTOS --- \n");
